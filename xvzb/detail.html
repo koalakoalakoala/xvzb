@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转换明细</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+</head>
+<body>
+<!-- xvzb-content begin-->
+<div class="xvzb-content">
+    <!-- xvzb-top begin-->
+    <div class="xvzb-top">
+        <div class="xvzb-topbox">
+            <div class="xvzb-logo"><a href="#"> <img src="img/logo.png" ></a></div>
+            <div class="xvzb-exit">
+                <a class="txt" href="javascript:;"></a>
+                <span>您好！138****8000</span>
+                <div class="exit-btn">退出</div>
+            </div>
+        </div>
+    </div>
+    <!-- xvzb-top end-->
+    <!-- xvzb-centre begin-->
+    <div class="xvzb-centre clearfix">
+        <div class="xvzb-centrebox clearfix">
+            <!--xvzb-centreleft begin-->
+            <div class="xvzb-centreleft xian fl">
+                <div class="xvzbc-points hue1">
+                    <a href="#">
+                        <div class="xvzbc-pointsbox icon-btn"></div>
+                        <p>我的积分</p>
+                    </a>
+                </div>
+                <div class="xvzbc-points1">
+                    <a href="#">
+                        <i></i>
+                        <div class="xvzbc-pointsbox icon-btn1">
+                        </div>
+                        <p>转换明细</p>
+                    </a>
+                </div>
+            </div>
+            <!--xvzb-centreleft end-->
+            <!--xvzbc-content begin-->
+            <div class="xvzbc-content1 clearfix fl">
+                <ul class="xvzbc-top clearfix">
+                    <li class="first-li cur"><a href="#anchors3">全部记录</a></li>
+                    <li class=""><a href="#anchors4">转换成功</a></li>
+                    <li class=""><a href="#anchors5">转换失败</a></li>
+                </ul>
+                <ul class="xvzb-mem clearfix">
+                    <li class="xvzb-tit">
+                        <ul>
+                            <li>单号</li>
+                            <li>转换时间</li>
+                            <li>转换积分数</li>
+                            <li>转换GSD数 </li>
+                            <li>GSD地址</li>
+                            <li>转换状态</li>
+                            <li>备注</li>
+                        </ul>
+                    </li>
+                    <li class="xvzb-tit1">
+                        <ul>
+                            <li>GSD201609221023</li>
+                            <li>2016-09-22 11:11:29</li>
+                            <li>300</li>
+                            <li>300</li>
+                            <li>:Jsjgjgdhjksh</li>
+                            <li><span>成功</span></li>
+                            <li>转换成功！</li>
+                        </ul>
+                    </li>
+
+                    <li class="xvzb-tit2">
+                        <ul>
+                            <li>GSD201609221023</li>
+                            <li>2016-09-22 11:11:29</li>
+                            <li>300</li>
+                            <li>300</li>
+                            <li>:Jsjgjgdhjkshj</li>
+                            <li><span>成功</span></li>
+                            <li>转换成功！</li>
+                        </ul>
+                    </li>
+
+                    <li class="xvzb-tit3">
+                        <ul>
+                            <li>GSD201609221023</li>
+                            <li>2016-09-22 11:11:29</li>
+                            <li>300</li>
+                            <li>300</li>
+                            <li>:Jsjgjgdhjksh</li>
+                            <li><em>失败</em></li>
+                            <li>网络错误！</li>
+                        </ul>
+                    </li>
+
+                    <li class="xvzb-tit4">
+                        <ul>
+                            <li>GSD201609221023</li>
+                            <li>2016-09-22 11:11:29</li>
+                            <li>300</li>
+                            <li>300</li>
+                            <li>:Jsjgjgdhjkshjk</li>
+                            <li><em>失败</em></li>
+                            <li>网络错误！</li>
+                        </ul>
+                    </li>
+                </ul>
+               <!--分页 begin-->
+				<div class="tcdPageCode"></div>
+				<!--分页 end-->
+		       </div>
+        </div>
+
+    </div>
+    <!-- xvzb-centre end-->
+    <!-- xvzb-footer begin-->
+    <div class="xvzb-footer">
+        <p>中盾商城  © 版权所有 粤ICP备05008892号</p>
+    </div>
+    <!-- xvzb-footer end-->
+</div>
+<!-- xvzb-content end-->
+<!--js begin-->
+	<script>
+		$(".tcdPageCode").createPage({
+			pageCount:11,
+			current:1,
+			backFn:function(p){
+				console.log(p);
+			}
+		});
+	</script>
+	<!--js end-->
+</body>
+</html>
